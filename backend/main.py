@@ -1,5 +1,5 @@
 from fastapi import FastAPI, Depends
-from backend.schemas import PostCreate, CreateUser
+from schemas import PostCreate, CreateUser
 from backend.database import session_local, engine
 from backend import models
 from sqlalchemy.orm import Session
