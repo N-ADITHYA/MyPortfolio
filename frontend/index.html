@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Adithya | Software Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="logo">iadiee</div>
+    <div class="menu-toggle" id="menuToggle">☰</div>
+
+<div class="popup-menu" id="popupMenu">
+  <a href="#home"> <span>Home</span></a>
+  <a href="#about"> <span>About</span></a>
+  <a href="#skills"> <span>Skills</span></a>
+  <a href="#projects"> <span>Projects</span></a>
+  <a href="#blog"> <span>Blog</span></a>
+  <a href="#testimonials"> <span>Testimonials</span></a>
+  <a href="#contact"> <span>Contact</span></a>
+</div>
+  </nav>
+  <button id="toggleTheme">🌙</button>
+
+  <section id="home" class="hero reveal section" data-bg="#1e1e2f">
+    
+    <div class="hero-text">
+      <h1>Hi, I'm Adithya 👋</h1>
+      <p>Software Developer | Backend | FastAPI | Java | IoT Enthusiast</p>
+      <a href="#contact">Let’s Connect</a>
+      <a href="assets/resume.pdf" target="_blank">Resume</a>
+    </div>
+    <div class="hero-img">
+      <img src="assets/prof.jpeg" alt="Profile">
+    </div>
+  </section>
+
+  <section id="about" class="reveal section" data-bg="#16324F">
+    <h2 class="section-title">About Me</h2>
+    <div class="about">
+      <p>
+        Passionate backend developer using FastAPI, Java, and modern stacks. I love building real-world apps with clean architecture and solving DSA on LeetCode.
+      </p>
+      <div class="dev-links">
+        <a href="https://github.com/N-ADITHYA" target="_blank">GitHub</a>
+        <a href="https://leetcode.com/u/Adithya_N/" target="_blank">LeetCode</a>
+      </div>
+      <div class="contributions">
+        <img src="https://ghchart.rshah.org/N-ADITHYA" alt="GitHub Contributions" />
+        <img src="https://leetcard.jacoblin.cool/Adithya_N?ext=heatmap" alt="LeetCode Stats" />
+      </div>
+    </div>
+  </section>
+
+ <section id="skills" class="reveal section" data-bg="#15202B">
+  <h2 class="section-title">Skills</h2>
+
+  <div class="skill-category">
+    <h3>Languages</h3>
+    <div class="skills-list">
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="skill-icon" alt="Python"> Python</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="skill-icon" alt="Java"> Java</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="skill-icon" alt="SQL"> SQL</span>
+    </div>
+  </div>
+
+  <div class="skill-category">
+    <h3>Frameworks & Libraries</h3>
+    <div class="skills-list">
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" class="skill-icon" alt="FastAPI"> FastAPI</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" class="skill-icon" alt="OpenCV"> OpenCV</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" class="skill-icon" alt="Dialogflow">Dialogflow</span>
+
+    </div>
+  </div>
+
+  <div class="skill-category">
+    <h3>Tools & Technologies</h3>
+    <div class="skills-list">
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="skill-icon" alt="Git"> Git & GitHub</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="skill-icon" alt="PostgreSQL"> PostgreSQL</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="skill-icon" alt="HTML"> HTML</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="skill-icon" alt="CSS"> CSS</span>
+      <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="skill-icon" alt="JavaScript"> JavaScript</span>
+      <span>🌐 IoT</span>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <section id="projects" class="reveal section" data-bg="#1B2A41">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects">
+
+
+      <div class="project-card"
+     data-title="RFID Access Logging System"
+     data-image="assets/RFID1.jpg"
+     data-desc="Real-time RFID-based access system built with FastAPI. Logs entry/exit by UID from NodeMCU and RC522 RFID scans, stores them in PostgreSQL."
+     data-tech="FastAPI, PostgreSQL, NodeMCU, SQLAlchemy"
+     data-link="https://github.com/yourusername/rfid-access-system">
+  <img src="assets/RFID1.jpg" alt="RFID Access Logging System">
+  <h3>RFID Access Logging</h3>
+</div>
+
+
+
+      <div class="project-card" data-title="Smart Notes App" data-image="assets/smartNotesapp.png"
+           data-desc="Java Swing-based app with CRUD, file storage, and real-time search."
+           data-tech="Java, Swing, File I/O"
+           data-link="https://github.com/yourusername/smart-notes">
+        <img src="assets/smartNotesapp.png" alt="Smart Notes">
+        <h3>Smart Notes App</h3>
+      </div>
+
+      <!-- <div class="project-card" data-title="Face Recognition Attendance" data-image="assets/face-attendance.png"
+           data-desc="Real-time attendance system using face detection with OpenCV."
+           data-tech="FastAPI, Python, OpenCV"
+           data-link="https://github.com/yourusername/face-attendance-system">
+        <img src="assets/face-attendance.png" alt="Face Attendance">
+        <h3>Face Attendance</h3>
+      </div> -->
+
+      <div class="project-card" data-title="Backend Clone of Social Media App" data-image="assets/fastapi.png"
+           data-desc="Built with FastAPI to handle signup, auth, post creation, etc."
+           data-tech="FastAPI, PostgreSQL"
+           data-link="https://github.com/yourusername/backend-clone">
+        <img src="assets/fastapi.png" alt="Backend Clone">
+        <h3>Social Media Backend</h3>
+      </div>
+
+      <div class="project-card" data-title="Chatbot using Dialogflow" data-image="assets/ds.png"
+           data-desc="Conversational chatbot using Dialogflow with FastAPI backend integration."
+           data-tech="Dialogflow, FastAPI"
+           data-link="https://github.com/yourusername/chatbot-fastapi">
+        <img src="assets/ds.png" alt="Chatbot">
+        <h3>Dialogflow Chatbot</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog" class="reveal section" data-bg="#102030">
+  <h2 class="section-title"> My Blog</h2>
+  <div class="blog-card">
+    <h3>
+      <a href="https://rfid-tag.hashnode.dev/how-i-built-an-rfid-access-thing-using-nodemcu-and-fastapi" target="_blank">
+        How I Built an RFID Access System Using NodeMCU and FastAPI
+      </a>
+    </h3>
+    <p>
+      A weekend project turned into a real-world integration of NodeMCU with FastAPI to log RFID card access in a PostgreSQL database. This blog covers it all — code, diagrams, flow and mistakes I made along the way.
+    </p>
+    <a href="https://rfid-tag.hashnode.dev" target="_blank">📚 View All Blogs</a>
+  </div>
+</section>
+
+
+  <!-- <section id="testimonials" class="reveal section" data-bg="#10161A">
+  <h2 class="section-title"> Testimonials</h2>
+  <div class="testimonial-card">
+    <p>Coming soon...</p>
+  </div>
+</section> -->
+
+
+
+  <section id="contact" class="reveal section" data-bg="#2C363F">
+  <h2 class="section-title">Contact Me</h2>
+  <form class="contact-form" id="contactForm">
+    <div class="form-group">
+      <input type="text" name="name" id="name" required placeholder=" " />
+      <label for="name">Your Name</label>
+    </div>
+
+    <div class="form-group">
+      <input type="email" name="email" id="email" required placeholder=" " />
+      <label for="email">Your Email</label>
+    </div>
+
+    <div class="form-group">
+      <textarea name="message" id="message" rows="5" required placeholder=" "></textarea>
+      <label for="message">Your Message</label>
+    </div>
+
+    <button type="submit" id="sendBtn">Send Message</button>
+  </form>
+</section>
+
+<footer class="fixed-footer">
+  <a href="https://github.com/N-ADITHYA" target="_blank" rel="noopener" style="margin: 0 10px;">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="height: 28px;" />
+  </a>
+  <a href="https://leetcode.com/u/Adithya_N/" target="_blank" rel="noopener" style="margin: 0 10px;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" style="height: 28px;" />
+  </a>
+  <a href="https://linkedin.com/in/adithya-n-30b464250/" target="_blank" rel="noopener" style="margin: 0 10px;">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" style="height: 28px;" />
+  </a>
+</footer>
+
+
+
+
+
+
+
+
+  <!-- 🔳 Modal Popup -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <img id="modalImage" src="" alt="">
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+      <p><strong>Tech Stack:</strong> <span id="modalTech"></span></p>
+      <a id="modalLink" href="#" target="_blank">🔗 View GitHub</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
