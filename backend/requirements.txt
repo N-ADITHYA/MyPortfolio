@@ -49,5 +49,4 @@ typing_extensions==4.12.2
 tzdata==2025.2
 uvicorn==0.34.0
 wheel==0.45.1
-dnspython-2.7.0
 email-validator-2.2.0
