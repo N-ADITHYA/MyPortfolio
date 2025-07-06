@@ -1,4 +1,4 @@
-from .schemas import CreateUser
+from backend.schemas import CreateUser
 from sqlalchemy.orm import Session
 from backend import models
 
