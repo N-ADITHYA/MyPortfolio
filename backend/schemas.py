@@ -1,11 +1,11 @@
 import datetime
 
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel
 
 
 class CreateUser(BaseModel):
     name: str
-    email: EmailStr
+    email: str
     message: str
 
     class Config:
