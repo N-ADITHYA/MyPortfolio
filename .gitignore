@@ -33,3 +33,4 @@ dist/
 
 # Uvicorn reload artifacts
 *.db
+backend/.env
