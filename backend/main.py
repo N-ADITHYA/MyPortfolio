@@ -1,12 +1,12 @@
 from fastapi import FastAPI, Depends
 import schemas
-from .database import session_local, engine
+import database
 import models
 from sqlalchemy.orm import Session
 import getDeets
 app = FastAPI()
 
-models.Base.metadata.create_all(bind=engine)
+models.Base.metadata.create_all(bind=database.engine)
 
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -20,7 +20,7 @@ app.add_middleware(
 
 
 def get_db():
-    db = session_local()
+    db = database.session_local()
     try:
         yield db
     finally:

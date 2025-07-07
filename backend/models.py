@@ -1,9 +1,9 @@
 from sqlalchemy import Integer, String, Column, DateTime, Boolean
 from sqlalchemy.orm import relationship
 from datetime import datetime
-from .database import Base
+import database
 
-class ContactForm(Base):
+class ContactForm(database.Base):
     __tablename__ =  'ContactForm'
 
     id = Column(Integer, primary_key=True, autoincrement=True, index=True)

@@ -1,8 +1,8 @@
-from .schemas import CreateUser
+import schemas
 from sqlalchemy.orm import Session
-from . import models
+import models
 
-def entryDeets(db: Session, user: CreateUser):
+def entryDeets(db: Session, user: schemas.CreateUser):
     db_user = models.ContactForm(**user.dict())
     db.add(db_user)
     db.commit()
