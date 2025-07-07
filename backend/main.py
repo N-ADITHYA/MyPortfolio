@@ -1,5 +1,5 @@
 from fastapi import FastAPI, Depends
-from .schemas import PostCreate, CreateUser
+from . import schemas
 from .database import session_local, engine
 from . import models
 from sqlalchemy.orm import Session
@@ -27,6 +27,6 @@ def get_db():
         db.close()
 
 
-@app.post("/create_user", response_model=PostCreate)
-def create_user(deets: CreateUser, db: Session = Depends(get_db)):
+@app.post("/create_user", response_model=schemas.PostCreate)
+def create_user(deets: schemas.CreateUser, db: Session = Depends(get_db)):
     return getDeets.entryDeets(db, deets)
