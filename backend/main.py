@@ -1,9 +1,9 @@
 from fastapi import FastAPI, Depends
 from schemas import PostCreate, CreateUser
 from database import session_local, engine
-from backend import models
+import models
 from sqlalchemy.orm import Session
-from backend import getDeets
+import getDeets
 app = FastAPI()
 
 models.Base.metadata.create_all(bind=engine)
