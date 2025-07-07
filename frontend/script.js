@@ -110,25 +110,36 @@ window.addEventListener("scroll", () => {
 
 const form = document.getElementById("contactForm");
 
-form.addEventListener("submit", async function(e) {
+contactForm.addEventListener("submit", async function (e) {
   e.preventDefault();
-  
+
+  sendBtn.classList.add("submitted");
+
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const message = document.getElementById("message").value;
 
-  const response = await fetch("https://myportfolio-lph2.onrender.com/create_user", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ name, email, message })
-  });
+  try {
+    const response = await fetch("https://api.iadiee.xyz/create_user", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name, email, message })
+    });
 
-  if (response.ok) {
-    alert("Message sent!");
-    form.reset();
-  } else {
-    alert("Failed to send message.");
+    if (response.ok) {
+      alert("Message sent!");
+      contactForm.reset();
+    } else {
+      alert("Failed to send message.");
+    }
+  } catch (err) {
+    alert("Network error.");
+    console.error(err);
   }
+
+  setTimeout(() => {
+    sendBtn.classList.remove("submitted");
+  }, 2000);
 });
 
 

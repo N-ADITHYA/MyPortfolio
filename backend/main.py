@@ -10,9 +10,12 @@ models.Base.metadata.create_all(bind=engine)
 
 from fastapi.middleware.cors import CORSMiddleware
 
+
+origins = ["https://iadiee.xyz"]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Or specify frontend URL like "http://localhost:5500"
+    allow_origins=origins,  # Or specify frontend URL like "http://localhost:5500"
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
