@@ -26,7 +26,7 @@ def get_db():
     finally:
         db.close()
 
-@app.post("/")
+@app.get("/")
 def root():
     return {"Hello": "World"}
 
