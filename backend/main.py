@@ -1,9 +1,9 @@
 from fastapi import FastAPI, Depends
-from . import schemas
+import schemas
 from .database import session_local, engine
-from . import models
+import models
 from sqlalchemy.orm import Session
-from . import getDeets
+import getDeets
 app = FastAPI()
 
 models.Base.metadata.create_all(bind=engine)
