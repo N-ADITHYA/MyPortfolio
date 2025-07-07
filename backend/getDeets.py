@@ -1,6 +1,6 @@
-from . import schemas
+from backend import schemas
 from sqlalchemy.orm import Session
-from . import models
+from backend import models
 
 def entryDeets(db: Session, user: schemas.CreateUser):
     db_user = models.ContactForm(**user.dict())
