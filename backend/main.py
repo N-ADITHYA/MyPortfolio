@@ -28,7 +28,7 @@ def get_db():
 
 @app.post("/")
 def root():
-    return "Backend is successfully hosted"
+    return {"Hello": "World"}
 
 @app.post("/create_user", response_model=PostCreate)
 def create_user(deets: CreateUser, db: Session = Depends(get_db)):
