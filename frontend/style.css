@@ -204,6 +204,7 @@ section {
   padding: 80px 40px;
 }
 .hero {
+  margin-left: 5%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -233,6 +234,8 @@ section {
   flex: 1;
   display: flex;
   justify-content: center;
+  /*margin-left: 30%;*/
+  /*justify-content: right;*/
 }
 .hero-img img {
   width: 350px;
