@@ -11,7 +11,10 @@ models.Base.metadata.create_all(bind=engine)
 from fastapi.middleware.cors import CORSMiddleware
 
 
-origins = ["https://iadiee.xyz"]
+origins = [
+    "https://iadiee.xyz",
+    "https://www.iadiee.xyz"
+]
 
 app.add_middleware(
     CORSMiddleware,
