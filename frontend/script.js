@@ -120,7 +120,7 @@ contactForm.addEventListener("submit", async function (e) {
   const message = document.getElementById("message").value;
 
   try {
-    const response = await fetch("https://api.iadiee.xyz/create_user", {
+    const response = await fetch("https://api.iadiee.live/create_user", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, email, message })
