@@ -12,8 +12,8 @@ from fastapi.middleware.cors import CORSMiddleware
 
 
 origins = [
-    "https://iadiee.xyz",
-    "https://www.iadiee.xyz"
+    "https://iadiee.live",
+    "https://www.iadiee.live"
 ]
 
 app.add_middleware(
