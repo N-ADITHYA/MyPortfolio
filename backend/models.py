@@ -11,3 +11,4 @@ class ContactForm(Base):
     email = Column(String, nullable=False)
     message = Column(String, nullable=False)
     timestamp = Column(DateTime, nullable=False, default=datetime.utcnow)
+
