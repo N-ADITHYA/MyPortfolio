@@ -8,7 +8,6 @@ from dotenv import load_dotenv
 env_path = os.path.join(os.path.dirname(__file__), '.env') #external DB
 load_dotenv(dotenv_path=env_path)
 db_url = os.getenv("DATABASE_URI")
-print(db_url)
 engine = create_engine(db_url)
 
 session_local = sessionmaker(autocommit=False, autoflush=False, bind=engine)
