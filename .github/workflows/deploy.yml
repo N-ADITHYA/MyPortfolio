@@ -23,6 +23,9 @@ jobs:
 
       - name: Run Tests
         run: pytest backend/tests
+        env:
+          TEST_DATABASE_URI: ${{ secrets.TEST_DATABASE_URI }}
+          TESTING: 1
 
       - name: Trigger on Render
 
