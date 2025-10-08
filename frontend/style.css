@@ -4,6 +4,7 @@
   --accent: #007bff;
   --card: #ffffff;
 }
+
 body.dark {
   --bg: #121212;
   --text: #eaeaea;
