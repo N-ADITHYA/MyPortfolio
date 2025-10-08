@@ -1,4 +1,4 @@
-name: Deploy Portfolio to Render
+name: Deploy on Render
 
 on:
   push:
@@ -6,11 +6,24 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  test_and_deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Trigger Render Deploy Hook
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Tests
+        run: pytest backend/tests
+
+      - name: Trigger on Render
+
+        if: success()
         run: curl "${{ secrets.RENDER_DEPLOY_HOOK_URL }}"
