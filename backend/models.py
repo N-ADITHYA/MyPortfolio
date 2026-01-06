@@ -3,6 +3,7 @@ from sqlalchemy.orm import relationship
 from datetime import datetime
 from backend.database import Base
 
+
 class ContactForm(Base):
     __tablename__ =  'ContactForm'
 
